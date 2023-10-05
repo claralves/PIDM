@@ -1,26 +1,31 @@
 import React from "react";
 import { View, Text } from "react-native";
-import dados from "./Dados";
+import { PaperProvider, IconButton, MD3Colors } from "react-native-paper";
+import estilos from "./estilos";
 
 const Questao02 = ({ route }) => {
   // Obtém o título selecionado dos parâmetros de navegação
-  const { selectedTitle } = route.params;
+  const itens = route.params;
 
-  // Filtra os dados com base no título selecionado
-  const filteredData = dados.find((item) => item.title === selectedTitle);
-
+  console.log(itens);
   return (
-    <View>
-      <Text>{selectedTitle}</Text>
-      {filteredData &&
-        filteredData.data.map((item) => (
-          <View key={item.nome}>
-            <Text>{item.nome}</Text>
-            <Text>{item.valor}</Text>
-            <Text>{item.hora}</Text>
-          </View>
-        ))}
-    </View>
+    <PaperProvider>
+      <View>
+        <IconButton
+          icon={itens.item.icon}
+          iconColor={"white"}
+          size={30}
+          onPress={() => console.log("")}
+          mode="contained"
+        />
+        <Text>{itens.selectedTitle}</Text>
+        <View key={itens.item.nome}>
+          <Text>{itens.item.nome}</Text>
+          <Text>{itens.item.valor}</Text>
+          <Text>{itens.item.hora}</Text>
+        </View>
+      </View>
+    </PaperProvider>
   );
 };
 

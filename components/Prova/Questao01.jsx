@@ -21,6 +21,7 @@ const Questao01 = ({ navigation }) => {
                     onPress={() =>
                       navigation.navigate("Questao02", {
                         selectedTitle: section.title,
+                        item,
                       })
                     }
                     mode="contained"
