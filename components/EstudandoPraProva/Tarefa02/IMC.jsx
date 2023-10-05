@@ -1,10 +1,13 @@
 import { View, Text, TextInput, Button, Pressable } from "react-native";
 import { useEffect, useState } from "react";
+import { useNavigation } from "@react-navigation/native";
 import estilo from "./Estilo";
 
 const IMC = ({ navigation }) => {
   const [Peso, SetPeso] = useState(0);
   const [Altura, SetAltura] = useState(0);
+
+  const navigation = useNavigation();
 
   return (
     <View style={estilo.container}>
