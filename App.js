@@ -13,8 +13,11 @@ import { StyleSheet, View, Text } from "react-native";
 // import MySectionList from "./components/12SectionList";
 // import MyFlexBox from "./components/13Flexbox/13Flexbox";
 // import MyFlexBox from "./components/13Flexbox/13FlexboxB";
-import MyNetworking from "./components/14Networking/14MyNetworking";
+// import MyNetworking from "./components/14Networking/14MyNetworking";
+// import PokemonApp from "./components/16Pokemon/PokemonApp";
+// import Questao01 from "./components/EstudandoPraProva/Tarefa01/Questao01";
+import Home from "./components/EstudandoPraProva/Tarefa02/Home";
 
 export default function App() {
-  return <MyNetworking />;
+  return <Home />;
 }
