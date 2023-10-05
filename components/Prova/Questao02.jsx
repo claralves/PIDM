@@ -15,9 +15,9 @@ const Questao02 = ({ route }) => {
       {filteredData &&
         filteredData.data.map((item) => (
           <View key={item.nome}>
-            <Text>Nome: {item.nome}</Text>
-            <Text>Valor: {item.valor}</Text>
-            <Text>Hora: {item.hora}</Text>
+            <Text>{item.nome}</Text>
+            <Text>{item.valor}</Text>
+            <Text>{item.hora}</Text>
           </View>
         ))}
     </View>
