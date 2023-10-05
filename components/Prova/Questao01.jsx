@@ -15,8 +15,8 @@ const Questao01 = ({ navigation }) => {
               <View style={estilos.container}>
                 <View style={{ flex: 1, flexDirection: "row" }}>
                   <IconButton
-                    icon="cart"
-                    iconColor={MD3Colors.tertiary0}
+                    icon={item.icon}
+                    iconColor={"white"}
                     size={30}
                     onPress={() =>
                       navigation.navigate("Questao02", {

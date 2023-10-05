@@ -7,7 +7,7 @@ const estilos = StyleSheet.create({
     paddingHorizontal: 16,
     paddingVertical: 8,
     margin: 5,
-    borderBottomWidth: 2,
+    borderBottomWidth: 1,
     borderColor: "grey",
   },
   fundo: {
