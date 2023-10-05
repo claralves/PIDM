@@ -16,8 +16,10 @@ import { StyleSheet, View, Text } from "react-native";
 // import MyNetworking from "./components/14Networking/14MyNetworking";
 // import PokemonApp from "./components/16Pokemon/PokemonApp";
 // import Questao01 from "./components/EstudandoPraProva/Tarefa01/Questao01";
-import Home from "./components/EstudandoPraProva/Tarefa02/Home";
+// import Home from "./components/EstudandoPraProva/Tarefa02/Home";
+import Questao01 from "./components/Prova/Questao01";
+// import Questao02 from "./components/Prova/Questao02";
 
 export default function App() {
-  return <Home />;
+  return <Questao01 />;
 }
