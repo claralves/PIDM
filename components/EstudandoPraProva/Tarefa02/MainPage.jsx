@@ -10,7 +10,7 @@ import Sobre from "./Sobre";
 
 const Stack = createNativeStackNavigator();
 
-const Main = () => {
+const MainPage = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -25,4 +25,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default MainPage;

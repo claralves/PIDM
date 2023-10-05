@@ -1,31 +1,31 @@
 import { View, Text, TextInput, Button, Pressable } from "react-native";
 import { useState } from "react";
-import estilo from "./Estilo";
+import MyStyle from "./Styles";
 
 const Cadastro = ({ navigation }) => {
   const [nome, setNome] = useState("");
   const [idade, setIdade] = useState(0);
   const [curso, setCurso] = useState("");
   return (
-    <View style={estilo.container}>
+    <View style={MyStyle.container}>
       <TextInput
-        style={estilo.input}
+        style={MyStyle.input}
         placeholder="Digita seu primeiro nome"
         onChangeText={(x) => setNome(x)}
       />
       <Text>{nome}</Text>
       <TextInput
-        style={estilo.input}
+        style={MyStyle.input}
         placeholder="Digita sua idade"
         onChangeText={(x) => setIdade(x)}
       />
       <TextInput
-        style={estilo.input}
+        style={MyStyle.input}
         placeholder="Digita seu curso"
         onChangeText={(x) => setCurso(x)}
       />
       <Pressable
-        style={estilo.button}
+        style={MyStyle.button}
         onPress={() =>
           navigation.navigate("Perfil", {
             Nome: nome,
@@ -34,7 +34,7 @@ const Cadastro = ({ navigation }) => {
           })
         }
       >
-        <Text style={estilo.buttonText}>OK!</Text>
+        <Text style={MyStyle.buttonText}>OK!</Text>
       </Pressable>
     </View>
   );

@@ -1,9 +1,9 @@
 import { View, Text, Button } from "react-native";
-import estilo from "./Estilo";
+import MyStyle from "./Styles";
 
 const Home = ({ navigation }) => {
   return (
-    <View style={estilo.container}>
+    <View style={MyStyle.container}>
       <Button
         title="Cadastro"
         onPress={() => navigation.navigate("Cadastro")}

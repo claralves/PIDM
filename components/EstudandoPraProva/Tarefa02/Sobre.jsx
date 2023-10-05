@@ -1,20 +1,20 @@
 import { View, Text, TextInput, Button, Pressable } from "react-native";
-import estilo from "./Estilo";
+import MyStyle from "./Styles";
 
 const Sobre = ({ navigation }) => {
   return (
-    <View style={estilo.container}>
+    <View style={MyStyle.container}>
       <Text style={{ fontWeight: "bold", fontSize: 50, color: "dodgerblue" }}>
         Sobre
       </Text>
-      <Text style={estilo.text}>
+      <Text style={MyStyle.text}>
         BlablablablablablablablablablablablablablablablablablablablablablablablablablablablaBlablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabl
       </Text>
       <Pressable
-        style={estilo.button}
+        style={MyStyle.button}
         onPress={() => navigation.navigate("Home")}
       >
-        <Text style={estilo.buttonText}>HOME</Text>
+        <Text style={MyStyle.buttonText}>HOME</Text>
       </Pressable>
     </View>
   );
